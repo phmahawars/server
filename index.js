@@ -12,6 +12,7 @@ const io = socketIo(server, {
     allowedHeaders: ["my-custom-header"],
     credentials: true,
   },
+  transports: ["websocket", "polling"],
 });
 // ldfkldskf
 app.use(cors());
